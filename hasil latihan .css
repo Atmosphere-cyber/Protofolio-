@@ -242,22 +242,27 @@ a {
   .isi {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
 
-  .content{
-    width: 100%;
-    max-width: 320px;
-  }
-  
-  .keahlian {
-    width: 100%;
-    max-width: 320px;
-  }
-
+  .content,
+  .keahlian,
   .contact {
     width: 100%;
     max-width: 500px;
-    margin: 48px auto 0;
+    margin: 0 auto;
+  }
+
+  .keahlian {
+    margin-top: 24px;
+  }
+
+  .contact {
+    margin-top: 48px;
+  }
+
+  h1 {
+    font-size: 2.2em;
   }
 
   .impian {
@@ -276,7 +281,6 @@ a {
   .header {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
     padding: 12px;
   }
 
@@ -286,9 +290,8 @@ a {
   }
 
   nav {
-    display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 8px;
   }
 
   .nav {
@@ -296,26 +299,11 @@ a {
     padding: 4px 6px;
   }
 
-  .judul {
-    align-items: center;
-  }
-
   h1 {
-    font-size: 2em;
-    text-align: center;
+    font-size: 1.8em;
   }
 
   .impian {
-    text-align: center;
-    font-size: 0.9rem;
-  }
-
-  .isi {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .video-background video {
-    object-position: center;
+    font-size: 0.9em;
   }
 }
