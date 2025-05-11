@@ -247,9 +247,12 @@ a {
     flex-wrap: wrap; /* Supaya gak overflow */
   }
 
-  .content,
-  .keahlian {
+  .content{
     width: 100%;
+    max-width: 320px;
+  }
+  .keahlian {
+    width: 70%;
     max-width: 320px;
   }
 
