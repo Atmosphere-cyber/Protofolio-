@@ -1,13 +1,15 @@
 * {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
-  body {
+  html, body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
   min-height: 100dvh;
   margin: 0;
   padding: 0;
-  overflow: auto;
+  overflow: auto; 
+  backface-visibility: hidden;
+  transform: translateZ(0)
 }
 .video-background {
   position: fixed;
