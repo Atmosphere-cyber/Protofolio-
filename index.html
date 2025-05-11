@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="hasil latihan .css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@200;400&display=swap"
+    rel="stylesheet">
+  <title>profil</title>
+</head>
+
+<body>
+  <div class="video-background">
+    <video autoplay muted loop playsinline>
+      <source src="87910-602074402_large.mp4" type="video/mp4">
+      Browser lu ga support video tag bro 😅
+    </video>
+  </div>
+  <div class="header">
+    <img src="Logo_Monogram_AJAM_dengan_Desain_Modern-removebg-preview.png" alt="" class="Logo">
+    <nav>
+      <a href="#" class="nav">ME</a>
+      <a href="#" id="comingSoonLink" class="nav">MY PROJECT</a>
+      <script>
+        document.getElementById("comingSoonLink").addEventListener("click", function (e) {
+          e.preventDefault(); // biar link gak loncat
+          alert("🚧 Coming Soon, tungguin aja ya!");
+        });
+      </script>
+    </nav>
+  </div>
+  <div class="section">
+    <div class="judul">
+      <div class="utama">
+        <h2 class="impian">FULL STACK WEB DEVELOPMENT</h2>
+        <h1 class="">Ajam</h1>
+      </div>
+    </div>
+    <div class="isi">
+      <div class="content">
+        <p class="about">Halo! Nama gue Abdullah Khaerul Ajam, biasa dipanggil Ajam. Gue lahir di Serang, 4 Agustus
+          2009, dan sekarang tinggal di daerah BTN. Gue baru lulus dari PKBM Bina Warga, dan saat ini lagi fokus
+          ngembangin skill di bidang teknologi, terutama pemrograman web dan instalasi jaringan.
+          Gue anak yang punya rasa penasaran tinggi dan suka belajar hal baru, apalagi yang berhubungan sama dunia
+          digital. Hobi gue emang main game, tapi dari situ juga gue mulai tertarik ngulik cara kerja aplikasi, sistem
+          jaringan, dan gimana web itu bisa jalan. Dari situ, gue mulai belajar ngoding dan ngerti pentingnya dunia IT
+          di masa depan..</p>
+      </div>
+      
+      <div class="keahlian">
+        <h2 class="text-center">Skill Gw</h2>
+        <div class="skill-item">
+          <a href="#" class="icon-link" data-tooltip="HTML">
+            <i class="fa-brands fa-html5" style="color: #ff0000; font-size: 60px;"></i>
+          </a>
+          <div class="skill" style="--level: 90;">
+            <div class="progress">
+              <div class="filled"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <a href="#" class="icon-link" data-tooltip="CSS">
+            <i class="fa-brands fa-css3-alt" style="color: #005eff; font-size: 60px;"></i>
+          </a>
+          <div class="skill" style="--level: 70;">
+            <div class="progress">
+              <div class="filled"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <a href="#" class="icon-link" data-tooltip="JAVASCRIPT">
+            <i class="fa-brands fa-js" style="color: #FFD43B; font-size: 60px;"></i>
+          </a>
+          <div class="skill" style="--level: 40;">
+            <div class="progress">
+              <div class="filled"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact" action="https://formspree.io/f/xpwdjpoa" method="POST">
+        <label>
+          <input class="input" type="nama" name="name" placeholder="nama kamu..." required>
+        </label>
+  <label>
+    <input class="input" type="email" name="email" placeholder="email kamu..." required>
+  </label>
+  <label>
+    <textarea name="message" placeholder="tulis pesan..." required></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Hubungi Saya</button>
+</form>
+    </div>
+</body>
+
+</html>

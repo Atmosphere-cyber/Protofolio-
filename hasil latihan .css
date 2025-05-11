@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+  body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.after-video {
+  background-color: #000000;
+  min-height: 100vh;
+  padding: 60px 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.Logo {
+  height: 60px;
+  width: 60px;
+}
+
+.nav {
+  font-size: 15px;
+  padding: 5px 8px;
+  text-decoration: none;
+  color: #f3f4f6;
+}
+
+.nav:hover {
+  color: #f3f4f6;
+  background-color: rgba(255, 255, 255, .5);
+  transition: 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.section {
+  width: 100%;
+  max-width: 1120px;
+  position: relative;
+  margin-left: 40px;
+  padding: 40px 24px 80px;
+  color: #1f2937;
+}
+
+.judul {
+  display: flex;
+  width: 60%;
+}
+
+.utama {
+  width: 100%;
+}
+
+.judul-kedua {
+  color: #ffff;
+  width: 30%;
+  text-align: center;
+}
+
+.content {
+  padding: 8px 12px;
+  backdrop-filter: blur(10px);
+  border-radius: 8px;
+  width: 70%;
+  display: flex;
+  gap: 32px;
+}
+
+.about {
+  color: #f3f4f6;
+  width: 100%;
+  text-align: justify;
+}
+
+.keahlian {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 5px;
+  padding: 16px;
+  width: 250px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+.skill-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-link {
+  position: relative;
+  font-size: 60px;
+  text-decoration: none;
+  transition: transform 0.2s;
+}
+
+.icon-link:hover {
+  transform: scale(1.2);
+}
+
+.icon-link:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #edf2f7;
+  color: #1a202c;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.skill {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.progress {
+  background: #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 12px;
+  width: 100%;
+}
+
+.filled {
+  background: #f56565;
+  height: 100%;
+  width: calc(var(--level) * 1%);
+  transition: width 1s ease-in-out;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  max-width: 300px;
+  backdrop-filter: blur(20px);
+  border-radius: 12px;
+  padding: 2px 8px;
+}
+
+.input {
+  margin: 5px;
+  width: 150px;
+  color: #ffff;
+  background: transparent;
+  border-radius: 3px;
+}
+
+textarea {
+  color: #ffff;
+  margin: 5px;
+  background: transparent;
+  width: 90%;
+}
+
+button {
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  color: white;
+}
+
+h1 {
+  color: #ffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 4em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+}
+
+.impian {
+  color: #ffff;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.text-center {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .section {
+    margin-left: 0;
+    padding: 24px 16px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .judul {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .isi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 600px;
+    flex: 1 1 300px;
+  }
+
+  .keahlian {
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .contact {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px;
+  }
+
+  .input,
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .impian {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .Logo {
+    height: 48px;
+    width: 48px;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .nav {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+
+  .judul {
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .impian {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .isi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-background video {
+    object-position: center;
+  }
+}
