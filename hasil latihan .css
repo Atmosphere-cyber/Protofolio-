@@ -231,37 +231,44 @@ a {
   .section {
     margin-left: 0;
     padding: 24px 16px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .judul {
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    width: 100%;
   }
 
-  .content,
-  .keahlian,
-  .contact {
+  .isi {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
     width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 600px;
+    flex: 1 1 300px;
   }
 
   .keahlian {
-    margin-top: 24px;
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
   }
 
   .contact {
-    margin-top: 48px;
-  }
-
-  h1 {
-    font-size: 2.2em;
-  }
-
-  .impian {
-    font-size: 1em;
-    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 40px;
   }
 
   .input,
@@ -269,12 +276,22 @@ a {
   button {
     width: 100%;
   }
+
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  .impian {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .header {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
     padding: 12px;
   }
 
@@ -284,8 +301,9 @@ a {
   }
 
   nav {
+    display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 10px;
   }
 
   .nav {
@@ -293,11 +311,26 @@ a {
     padding: 4px 6px;
   }
 
+  .judul {
+    align-items: center;
+  }
+
   h1 {
-    font-size: 1.8em;
+    font-size: 2em;
+    text-align: center;
   }
 
   .impian {
-    font-size: 0.9em;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .isi {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-background video {
+    object-position: center;
   }
 }
