@@ -231,59 +231,43 @@ a {
   .section {
     margin-left: 0;
     padding: 24px 16px 60px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .judul {
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    text-align: center;
   }
 
   .isi {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: row; /* Tetap sampingan */
     align-items: flex-start;
-    gap: 24px;
-    width: 100%;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap; /* Supaya gak overflow */
   }
 
-  .content {
-    width: 100%;
-    max-width: 600px;
-    flex: 1 1 300px;
-  }
-
+  .content,
   .keahlian {
-    position: static;
-    margin: 0 auto;
     width: 100%;
-    max-width: 400px;
+    max-width: 320px;
   }
 
   .contact {
     width: 100%;
     max-width: 500px;
-    margin-top: 40px;
+    margin: 48px auto 0;
+  }
+
+  .impian {
+    font-size: 1em;
+    text-align: center;
   }
 
   .input,
   textarea,
   button {
     width: 100%;
-  }
-
-  h1 {
-    font-size: 2.5em;
-    text-align: center;
-  }
-
-  .impian {
-    text-align: center;
   }
 }
 
