@@ -239,12 +239,6 @@ a {
     text-align: center;
   }
 
-  .isi {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
   .content,
   .keahlian,
   .contact {
